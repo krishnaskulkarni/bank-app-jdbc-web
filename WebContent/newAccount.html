@@ -1,0 +1,35 @@
+<html>
+    <head>
+
+        <body>
+            
+
+            <form action = "addNewBankAccount.do" method = "post">
+                <h1>NEW ACCOUNT CREATION</h1>
+                NAME:<br>
+                <input type="text" name="customer_name"  placeholder="enter your name here"><br><br><br>
+                ACCOUNT TYPE:<br>
+                
+                    <label for="exampleFormControlSelect1">Account Type</label>
+                    <select name="account_type" id="exampleFormControlSelect1">
+                      <option>Select</option>
+                      <option>Saving</option>
+                      <option>Current</option>
+                    </select>
+                 
+                <br>
+                <br>
+                <br>
+                ACCOUNT BALANCE.:<br>
+                <input type="number" pattern="[0-9]{10}" name="account_balance"  placeholder="account balance"><br>
+                <br>
+                <br>
+                <br>
+                <button name="subject" type="submit" value="HTML">SUBMIT</button>
+              </form>
+
+
+        </body>
+
+    </head>
+</html>

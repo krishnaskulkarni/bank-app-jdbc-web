@@ -1,0 +1,25 @@
+<beans xmlns="http://www.springframework.org/schema/beans"  
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+	xsi:schemaLocation="
+
+http://www.springframework.org/schema/beans
+
+     
+ http://www.springframework.org/schema/beans/spring-beans.xsd"  >
+	 
+
+
+
+
+	<bean id="renderer"
+		class="com.capgemini.spring.renderer.MessageRenderer">
+		<property name="messageProvider" ref="provider" />
+	</bean>
+
+	<bean id="provider"
+		class="com.capgemini.spring.provider.HwMessageProvider">
+	</bean>
+
+
+
+</beans>
